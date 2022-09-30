@@ -1,0 +1,112 @@
+{
+  "id": "e3a34260-72d5-4a94-8584-dca6f141bb40",
+  "version": "2.0",
+  "name": "xuanke",
+  "url": "https://1.tongji.edu.cn/studentElect",
+  "tests": [{
+    "id": "9ffd7765-efe1-4de7-90ba-b0317bbc6d40",
+    "name": "test",
+    "commands": [{
+      "id": "b6dd8e50-1c2a-4552-822b-8fcda9dab6fc",
+      "comment": "",
+      "command": "open",
+      "target": "https://1.tongji.edu.cn/studentElect",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8c29f3a2-60a2-414a-97d7-00670154d056",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'进入选课')]",
+      "targets": [
+        ["css=.el-button--large > span", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/section/main/div/div/div/div[2]/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'进入选课')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9972e3dd-54c1-48f1-997b-c38c863d2e44",
+      "comment": "",
+      "command": "click",
+      "target": "css=.el-dialog__footer:nth-child(3) .el-button",
+      "targets": [
+        ["css=.el-dialog__footer:nth-child(3) .el-button", "css:finder"],
+        ["xpath=(//button[@type='button'])[9]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/section/main/div/div[3]/div/div[3]/span/button", "xpath:idRelative"],
+        ["xpath=//div[3]/span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "058e8328-6d27-49dc-a052-3d21fc4be60d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//td[contains(.,'COURSE NAME(COURSE CODE)')]",
+      "targets": [
+        ["css=.odd > td:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='detail']/table/tr[2]/td", "xpath:idRelative"],
+        ["xpath=//tr[2]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'毕业设计（论文）（一）(190219)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41ae6c97-a737-4703-bd0e-a583e3899253",
+      "comment": "",
+      "command": "while",
+      "target": "true",
+      "targets": [],
+      "value": "Infinity"
+    }, {
+      "id": "6d2836cf-cb15-4cdf-8440-da342a24b629",
+      "comment": "",
+      "command": "clickAt",
+      "target": "xpath=//td[contains(.,'COURSE CODE')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7cc26fc9-e664-4beb-a029-5e1ae0da6d82",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'保存课表')]",
+      "targets": [
+        ["css=.float-right > .el-button--primary", "css:finder"],
+        ["xpath=(//button[@type='button'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/section/main/div/div/div/div[2]/div/div/div/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'保存课表')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfe45c2a-2047-4092-82f1-cc484ef70927",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//*[contains(text(),'人数已满')]",
+      "targets": [],
+      "value": "Infinity"
+    }, {
+      "id": "78425f49-f903-4dc4-81e3-23337bb49f8a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'关闭')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83d35cdd-1ddb-412f-84f1-030c296aeabc",
+      "comment": "",
+      "command": "end",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fd059eec-b0b4-43df-b84e-e5475859c78d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9ffd7765-efe1-4de7-90ba-b0317bbc6d40"]
+  }],
+  "urls": ["https://1.tongji.edu.cn/", "https://1.tongji.edu.cn/studentElect"],
+  "plugins": []
+}
